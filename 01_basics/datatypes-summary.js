@@ -26,3 +26,27 @@ const Myfunction=function(){
     
 }
 console.log(typeof id);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++
+//There are manly two types of memory in javascript
+//Stack(Primitive) 'whenever stack memory is used we get the copy of the variable', 
+//Heap(NonPrimitive)  whenever memory is defined under the heap we get the reference 
+//of the variable
+
+let myname="Ayush"
+let anothername=myname
+anothername="Amit"
+console.log(anothername);
+console.log(myname);
+
+let userOne ={
+    email : "user@google.com",
+    upi: "user@ybl"
+}
+usertwo=userOne
+
+usertwo.email="ayush@google.com"
+console.log(userOne.email);
+console.log(usertwo.email);
+
+
