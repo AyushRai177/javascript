@@ -10,3 +10,6 @@ prefer not to use var because of issue in block scope and functional scope
 */
 let accountState;
 console.table([accountId,accountEmail,accountpassword,accountCity,accountState])
+
+
+let accoun
