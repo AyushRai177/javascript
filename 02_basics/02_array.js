@@ -4,8 +4,8 @@ const rock =['coc','Tr']
 //marvel_heroes.push(dc_heroes)
 //console.log(marvel_heroes[3][1]);
 
-//marvel =marvel_heroes.concat(dc_heroes)
-//console.log(marvel);
+marvel =marvel_heroes.concat(dc_heroes)
+console.log(marvel);
 
 const all_newheroes=[...marvel_heroes,...dc_heroes]
 console.log(all_newheroes);
