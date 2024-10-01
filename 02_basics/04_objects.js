@@ -3,10 +3,10 @@ const tinderUser ={}
 tinderUser.id="123abc"
 tinderUser.name="Ayush"
 tinderUser.isLoggedIn=false
-console.log(tinderUser);
+//console.log(tinderUser);
 
 const regularuser ={
-    email:"ayush@gmail.com",
+    "email":"ayush@gmail.com",
     fullname:{
         userfullname:{
         firstname:"Ayush",
@@ -15,7 +15,7 @@ const regularuser ={
 }
 }
 
-//console.log(regularuser.fullname);
+console.log(regularuser.email);
 
 
  
@@ -25,43 +25,48 @@ const obj2 ={3:"a", 4:"b"}
 //console.log(obj3);
 
 const main={...obj1,...obj2}
-console.log(main);
-
+//console.log(main);
 
 const users = [
     {
     },
     {
     },
-    { 
+    {
     }]
 
     //users.[1].email
 
-    console.log(tinderUser);
-    console.log(Object.keys(tinderUser));
-    console.log(Object.entries(tinderUser));
+    //console.log(tinderUser);
+    //console.log(Object.keys(tinderUser));
+    //console.log(Object.entries(tinderUser));
     
-    console.log(tinderUser.hasOwnProperty("isLogged"));
+    //console.log(tinderUser.hasOwnProperty("isLogged"));
 
     const course ={
         coursename:"Javascript",
         Instructorname:"Hitesh"
     }
-    //course.Instructorname
+    console.log(course.coursename);
 
     const {Instructorname:instructor} = course
     console.log(instructor);
-    
    //APIS format they are in the form of objects or they are in the form of array
-    {
-        "name": "Ayush Rai",
-        "coursename": "Javascript",
-        "price":"Free"
-    }
 
-    [
+    /*[
         {},
         {},
         {}
-    ]
+    ]*/ 
+
+        const user = { 
+            'name': 'Alex',
+            'address': '15th Park Avenue',
+            'age': 43
+        }
+        
+        const { name:fullname  } = user // Uncaught SyntaxError: Unexpected token '='
+        console.log(fullname);
+        
+        
+        
